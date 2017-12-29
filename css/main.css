@@ -1,0 +1,57 @@
+body {
+	font-family: 'Raleway', sans-serif !important;;
+}
+/* view-index */
+.logo {
+  outline: 1px solid yellow
+}
+.grad70 {
+  background: linear-gradient(125deg, rgb(121, 0, 99)45%, rgb(228, 0, 152));
+}
+.vh100 {
+  height: 100vh;
+}
+.container-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+
+}
+/* view-register  */
+.logo40 {
+  width: 10vh;
+}
+.imagenCarro {
+  background-image:url('../assets/images/carro.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.caja {  
+    padding-top: 450px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+/* view-singup */
+.container1 {
+  border: 2px solid red;
+}
+
+.h10 {
+  height: 10vh;
+}
+.w18 {
+  width: 18vh;
+}
+.h10 {
+  height: 10vh;
+}
+.w10 {
+  width: 10vh;
+}
+.oculta-texto {
+  display: none;
+}
