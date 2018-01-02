@@ -16,10 +16,9 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 2em;
-
 }
 /* view-register  */
-.logo40 {
+.logo50 {
   width: 10vh;
 }
 .imagenCarro {
@@ -34,12 +33,10 @@ body {
     padding-left: 75px;
     padding-right: 75px;
 }
-
 /* view-singup */
-.container1 {
+/* .container1 {
   border: 2px solid red;
-}
-
+} */
 .h10 {
   height: 10vh;
 }
@@ -60,4 +57,17 @@ body {
 }
 .h40 {            
   height: 40px;
+}
+/*view ultimate*/
+.mt-5 {
+  margin-top: 5vh;
+}
+.grad10{
+  background: linear-gradient(125deg, rgb(248, 234, 247)45%, rgb(255, 238, 249));
+}
+.w-30{
+  width: 30vh;
+}
+.w-45 {
+  width: 45vh;
 }

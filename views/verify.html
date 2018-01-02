@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">  
-    <title>Verify</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Verify</title>
 </head>
-<body>
+
+<body class="grad10">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-12">  
-        <p class="back inline-block margin-right"><a href="../views/sign.html"></a></p>
-        <h1 class="inline-block title text-center">Verify phone number</h1>       
+      <div class="slide">
+        <a href="register.html" type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+        </a>
       </div>
+      <div class="col-xs-12 text-center">
+        <h1 class="inline-block">Sign Up</h1>
+      </div>
+      <p class="center text-center">Join now for free ride credit</p>
+      <hr>
     </div>
-    <p class="center text-center">Join now for free ride credit</p>
-    <hr>
-    <div class="col-xs-12 center margin-bottom">  
-      <p class="inline-block text-center">LAB - <input type="text" class="inline-block input-cod" id="cod1"></p>
+
+    <div class="col-xs-12 center margin-bottom">
+      <p class="inline-block text-center">LAB -
+        <input type="text" class="inline-block input-cod" id="cod1">
+      </p>
     </div>
-    <p class="center margin-bottom text-center">Enter the code sent <span id="cod-postal">+</span></p>
+    <p class="center margin-bottom text-center">Enter the code sent
+      <span id="cod-postal">+</span>
+    </p>
     <button type="button" class="btn btn-default button-reset text-center" id="button-reset">Resent Code</button>
-    <button class="btn btn-default btn-lg btn-block margin-button disabled-color text-center" role="button" id="button-next-verify" disabled="disabled">NEXT</button>
+    <button class="btn btn-default btn-lg btn-block margin-button disabled-color text-center" role="button" id="button-next-verify"
+      disabled="disabled">NEXT</button>
   </div>
   <script src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script src="../vendors/bootstrap/js/bootstrap.js"></script>
-  <!-- <script src="../js/sign.js"></script> -->
   <script src="../js/verify.js"></script>
 </body>
+
 </html>

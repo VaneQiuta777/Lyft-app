@@ -60,7 +60,4 @@ $(document).ready(function () {
     console.log(labCode)
     window.location.href = 'verify.html';
   });
-
-
-
 });
