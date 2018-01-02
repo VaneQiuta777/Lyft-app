@@ -1,42 +1,66 @@
 $(document).ready(function () {
-  // funcion para que cambie la bandera seleccionada y el codigo postal
-  function bandera(element) {
+  // seleccionar el país según código postal
+  function flag(element) {
     var srcImgBanderas = $('#img-banderas').attr('src');
     var altImgBanderas = $('#img-banderas').attr('alt');
-    var thisSrcImgBanderas = $(element).attr('src');
-    var thisAltImgBanderas = $(element).attr('alt');
-    $('#img-banderas').attr('src', thisSrcImgBanderas);
-    $('#img-banderas').attr('alt', thisAltImgBanderas);
+    var srcImgBanderasNew = $(element).attr('src');
+    var altImgBanderasNew = $(element).attr('alt');
+    $('#img-banderas').attr('src', srcImgBanderasNew);
+    $('#img-banderas').attr('alt', altImgBanderasNew);
     $(element).attr('src', srcImgBanderas);
     $(element).attr('alt', altImgBanderas);
-    if (thisAltImgBanderas === 'Peru') {
+    if (altImgBanderasNew === 'Peru') {
       $('#postal').text('52');
-      localStorage.codPostal = '52';
     }
-    if (thisAltImgBanderas === 'Brasil') {
+    if (altImgBanderasNew === 'Brasil') {
       $('#postal').text('51');
-      localStorage.codPostal = '51';
     }
-    if (thisAltImgBanderas === 'Colombia') {
+    if (altImgBanderasNew === 'Colombia') {
       $('#postal').text('50');
-      localStorage.codPostal = '50';
     }
-    if (thisAltImgBanderas === 'Argentina') {
+    if (altImgBanderasNew === 'Argentina') {
       $('#postal').text('49');
-      localStorage.codPostal = '49';
     }
   }
-
   $('#img-banderas1').click(function () {
-    bandera($(this));
+    flag($(this));
   });
-
   $('#img-banderas2').click(function () {
-    bandera($(this));
+    flag($(this));
+  });
+  $('#img-banderas3').click(function () {
+    flag($(this));
+  });
+  $('#img-banderas4').click(function () {
+    flag($(this));
+  });
+  // habilitar el botón-next
+  $('#button-next').attr('disabled', true);
+  $('#number-phone').keyup(function () {
+    if (($(this).val().length) === 9) {
+      $('#button-next').attr('disabled', false);
+    }
+    else {
+      $('#button-next').attr('disabled', true);
+    }
+  });
+  //validar el número móvil empiece con 9 --> pendiente
+  
+  // obtener el código LAB
+  $('#button-next').click(function (e) {
+    // var key = e.keyCode || e.which;
+    // if (key === 13) {
+    var labCode = Math.floor(1e2 + (Math.random() * 2e2));
+    alert('Tu código es ' + ' LAB ' + labCode);
+    // };
+    event.preventDefault();
+    localStorage.code = labCode;
+
+    var lastname = localStorage.getItem(labCode);
+    console.log(labCode)
+    window.location.href = 'verify.html';
   });
 
-  $('#img-banderas3').click(function () {
-    bandera($(this));
-  });
-//deshabilitar y habilitar el botón.
-if((#button-next) === 
+
+
+});
