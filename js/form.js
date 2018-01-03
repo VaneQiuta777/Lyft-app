@@ -3,9 +3,10 @@ $(document).ready(function () {
   var $lastName = $('#last-name');
   var $email = $('#email');
   // habilitar el botón-next
-  $('#submit').attr('disabled', 'disabled');
   $('#check').click(function () {
-    $('#submit').attr('disabled', false);
+    console.log('sdsa')
+    $('#submit').removeAttr('disabled');
+
   });
   // validar que ingrese sólo letras
   $(':text#first-name').on('input', function () {
